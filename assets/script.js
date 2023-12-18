@@ -16,9 +16,9 @@ $(document).ready(function () {
             $.ajax({
                 type: 'POST',
                 url: 'server/start',
-                success: function (response) {
-                    alert(response, "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
-                }
+                // success: function (response) {
+                //     console.log(response)
+                // }
             })
         }
         else {
@@ -29,9 +29,9 @@ $(document).ready(function () {
             $.ajax({
                 type: 'POST',
                 url: 'server/stop',
-                success: function (response) {
-                    alert(response, "werfewaffewafawf")
-                }
+                // success: function (response) {
+                //     console.log(response)
+                // }
             })
         }
     })

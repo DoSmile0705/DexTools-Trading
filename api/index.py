@@ -5,10 +5,8 @@ app = Flask(__name__)
 
 
 @app.route('/server/start', methods=['GET', 'POST'])
-def home():
-    return 'Hello, World!'
-
-
+# def home():
+    # return 'Hello, World!'
 class DextoolsAPI:
     api_key = '9KBOGXmVLopfS4mAyYEj5G78Qklr0RGA'
 
