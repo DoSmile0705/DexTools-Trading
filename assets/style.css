@@ -1,0 +1,52 @@
+.main-body {
+  width: 900px;
+  height: auto;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  margin-inline: auto;
+}
+
+.server-status1,
+.server-status2 {
+  font-family: "Times New Roman", Times, serif;
+  color: green;
+  text-align: center;
+}
+
+.server-status1 {
+  display: none;
+}
+
+.button-body {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.server-status-btn {
+  width: 200px;
+  height: 45px;
+  font-size: 25px;
+  color: white;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(65, 148, 65);
+  cursor: pointer;
+}
+
+.server-status-btn:hover {
+  background-color: rgb(30, 116, 30);
+}
+
+#loading-gif {
+  display: none;
+  margin-top: 100px;
+  width: 200px;
+  height: 200px;
+  background-image: url(./loading.gif);
+  background-repeat: no-repeat;
+}
