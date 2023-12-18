@@ -10,6 +10,8 @@ def home():
 
 
 class DextoolsAPI:
+    api_key = '9KBOGXmVLopfS4mAyYEj5G78Qklr0RGA'
+
     def __init__(self, api_key, useragent="API-Wrapper/0.2"):
         self.url = f"https://api.dextools.io/v1"
         self._api_key = api_key
