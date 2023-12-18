@@ -13,19 +13,23 @@ $(document).ready(function () {
             $("#startBtn").html("Stop Server!");
             $("#serverStatus").html("Server is Running Now!");
             $fleg = false;
+            $.ajax({
+                type: 'POST',
+                url: 'server/start',
+            })
         }
         else {
             $("#loading-gif").css("display", "none");
             $("#startBtn").html("Start Server!");
             $("#serverStatus").html('Server Stopped, Please Click "Start Server" Button!');
             $fleg = true;
+            $.ajax({
+                type: 'POST',
+                url: 'server/stop',
+            })
         }
-        $.ajax({
-            type: 'POST',
-            url: 'server/start',
-            // success: function (response) {
-            //     $(this).html(response);
-            // }
-        })
+        // success: function (response) {
+        //     $(this).html(response);
+        // }
     })
 });
