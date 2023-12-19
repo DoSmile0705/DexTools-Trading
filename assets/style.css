@@ -72,13 +72,15 @@
   background-size: contain;
 }
 
+.logo-body-container {
+  margin-top: 200px;
+  width: 100%;
+}
 .login-body {
   width: 500px;
   height: auto;
-  position: fixed;
-  top: 200px;
-  left: 700px;
   display: flex;
+  margin-inline: auto;
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
@@ -155,5 +157,3 @@
   font-size: 20px;
   font-family: "Times New Roman", Times, serif;
 }
-
-

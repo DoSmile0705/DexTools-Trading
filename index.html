@@ -20,25 +20,34 @@
   </head>
   <body>
     <div class="logo"></div>
-    <div class="login-body">
-      <h1>DexTools Trading Server</h1>
-      <input type="email" class="email" placeholder="Email Adress" id="email" />
-      <h5 class="error-msg-email" id="errorEmail1">Please type valid email!</h5>
-      <h5 class="error-msg-email" id="errorEmail2">Email is required!</h5>
-      <div class="password-container">
+    <div class="logo-body-container">
+      <div class="login-body">
+        <h1>DexTools Trading Server</h1>
         <input
-          type="password"
-          class="password"
-          id="password"
-          placeholder="Password"
+          type="email"
+          class="email"
+          placeholder="Email Adress"
+          id="email"
         />
-        <span><i id="toggler" class="far fa-eye"></i></span>
+        <h5 class="error-msg-email" id="errorEmail1">
+          Please type valid email!
+        </h5>
+        <h5 class="error-msg-email" id="errorEmail2">Email is required!</h5>
+        <div class="password-container">
+          <input
+            type="password"
+            class="password"
+            id="password"
+            placeholder="Password"
+          />
+          <span><i id="toggler" class="far fa-eye"></i></span>
+        </div>
+        <h5 class="error-msg-pass" id="errorPass1">
+          Please type correct password!
+        </h5>
+        <h5 class="error-msg-pass" id="errorPass2">Password is required!</h5>
+        <button id="login" id="login">login</button>
       </div>
-      <h5 class="error-msg-pass" id="errorPass1">
-        Please type correct password!
-      </h5>
-      <h5 class="error-msg-pass" id="errorPass2">Password is required!</h5>
-      <button id="login" id="login">login</button>
     </div>
     <div class="footer"></div>
     <script src="./assets/script.js"></script>
