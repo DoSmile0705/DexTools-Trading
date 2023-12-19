@@ -1,17 +1,5 @@
 $fleg = true
 
-// $(document).ready(function () {
-//     var token = localStorage.getItem('jwtToken'); // Retrieve the jwtToken from local storage
-
-//     if (!token) {
-//         var i = 0;
-//         do {
-//             i++;
-//             window.location.replace("index.html");
-//         } while (i < 1);
-//     }
-// });
-
 
 $(function () {
     $(document).ready(function () {
