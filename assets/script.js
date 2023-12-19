@@ -20,6 +20,7 @@ $(function () {
                     },
                     success: function (response) {
                         alert('wow' + response);
+                        console.log(data)
                     },
                 });
             }
