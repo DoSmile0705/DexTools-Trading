@@ -17,16 +17,6 @@ def get_cred():
         return 'ok'
     else:
         return 'Not'         
-    # password = data.get('password')
-
-    # init_email = "whaleundercover@gmail.com"
-    # init_pass = "DexTools0705!"
-
-    # if (data):
-    #     return 'okay'
-    # else:
-    #     return 'sdafffffffffffffffdasfdasfasdfasfsadfasdfafdadf'
-
 
 @app.route('/server/start', methods=['GET', 'POST'])
 def home():

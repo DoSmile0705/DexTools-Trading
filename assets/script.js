@@ -16,7 +16,12 @@ $(function () {
                         password: newPass,
                     },
                     success: function (response) {
-                        alert('wow' + response);
+                        if (response === 'ok'){
+                            window.location.replace("admin.html");
+                        }
+                        else{
+                            window.location.replace("index.html");
+                        }
                     },
                 });
             }
