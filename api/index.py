@@ -10,7 +10,7 @@ def get_cred():
     dataCred = Request.data
     if (dataCred):
         
-        return 'ok'
+        return dataCred
     else:
         return 'sdafffffffffffffffdasfdasfasdfasfsadfasdfafdadf'
     
