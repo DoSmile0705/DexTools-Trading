@@ -1,5 +1,17 @@
 $fleg = true
 
+$(document).ready(function () {
+    var token = localStorage.getItem('jwtToken'); // Retrieve the jwtToken from local storage
+
+    if (!token) {
+
+        window.location.replace("index.html");
+    } else {
+        window.location.replace("admin.html");
+
+    }
+});
+
 
 $(function () {
     $(document).ready(function () {
