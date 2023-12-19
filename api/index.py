@@ -8,9 +8,11 @@ app = Flask(__name__)
 @app.route('/server/login', methods=['POST', 'GET'])
 def get_cred():
     dataCred = Request.data
+    datatype = type(dataCred)
+    datatypestr = str(datatype)
+
     if (dataCred):
-        
-        return dataCred
+        return datatypestr
     else:
         return 'sdafffffffffffffffdasfdasfasdfasfsadfasdfafdadf'
     

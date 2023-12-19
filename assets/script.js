@@ -1,8 +1,5 @@
 $fleg = true
 
-
-
-
 $(function () {
     $(document).ready(function () {
         $('#login').click(function () {
