@@ -11,7 +11,6 @@ $(function () {
             var newEmail = $('#email').val();
             var newPass = $('#password').val();
             if (newEmail === $initEmail && newPass === $initPass) {
-                alert(newPass)
                 $.ajax({
                     type: 'POST',
                     url: 'server/login',
