@@ -1,37 +1,27 @@
 $fleg = true
 
-var password = document.getElementById('password');
-var toggler = document.getElementById('toggler');
-showHidePassword = () => {
-    if (password.type === 'password') {
-        password.setAttribute('type', 'text');
-        toggler.classList.add('fa-eye-slash');
-    } else {
-        toggler.classList.remove('fa-eye-slash');
-        password.setAttribute('type', 'password');
-    }
-};
-toggler.addEventListener('click', showHidePassword);
 
-var initEmail = "whaleundercover@gmail.com"
-var initPass = "DexTools0705!"
+
+$initEmail = "whaleundercover@gmail.com"
+$initPass = "DexTools0705!"
 
 $(function () {
     $(document).ready(function () {
         $('#login').click(function () {
             var newEmail = $('#email').val();
             var newPass = $('#password').val();
-            if (newEmail === initEmail && newPass === initPass) {
+            if (newEmail === $initEmail && newPass === $initPass) {
+                alert(newPass)
                 $.ajax({
                     type: 'POST',
                     url: 'server/login',
                     data: {
-                        'email': newEmail,
-                        'password': newPass,
+                        email: newEmail,
+                        password: newPass,
                     },
                     success: function (response) {
                         alert('wow' + response);
-                    }
+                    },
                 });
             }
             if (newEmail === "") {
