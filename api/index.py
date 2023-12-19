@@ -5,21 +5,20 @@ from flask import Request
 
 app = Flask(__name__)
 
-@app.route('/server/login', methods=['POST', 'GET'])
 
-def get_cred():
+@app.route('/server/login', methods=['POST', 'GET'])
+def get_cred(request):
     # data = Request.get_json()
-    email = Request('email')
+    return request.form.data['email']
     # password = data.get('password')
 
-    # init_email = "whaleundercover@gmail.com" 
-    # init_pass = "DexTools0705!" 
+    # init_email = "whaleundercover@gmail.com"
+    # init_pass = "DexTools0705!"
 
-    if(email):
-        return 'okay'
-    else:
-        return 'sdafffffffffffffffdasfdasfasdfasfsadfasdfafdadf'
-    
+    # if (data):
+    #     return 'okay'
+    # else:
+    #     return 'sdafffffffffffffffdasfdasfasdfasfsadfasdfafdadf'
 
 
 @app.route('/server/start', methods=['GET', 'POST'])
