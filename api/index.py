@@ -9,6 +9,7 @@ app = Flask(__name__)
 def get_cred():
     dataCred = Request.data
     if (dataCred):
+        print(dataCred, "asdffffffffffffffffffffffffffffffffffffff", dataCred.email)
         return 'ok'
     else:
         return 'sdafffffffffffffffdasfdasfasdfasfsadfasdfafdadf'

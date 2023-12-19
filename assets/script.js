@@ -2,12 +2,12 @@ $fleg = true
 
 
 
-$initEmail = "whaleundercover@gmail.com"
-$initPass = "DexTools0705!"
 
 $(function () {
     $(document).ready(function () {
         $('#login').click(function () {
+            $initEmail = "whaleundercover@gmail.com"
+            $initPass = "DexTools0705!"
             var newEmail = $('#email').val();
             var newPass = $('#password').val();
             if (newEmail === $initEmail && newPass === $initPass) {
