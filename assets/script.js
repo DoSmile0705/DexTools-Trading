@@ -6,11 +6,11 @@ $fleg = true
 $(function () {
     $(document).ready(function () {
         $('#login').click(function () {
-            $initEmail = "whaleundercover@gmail.com"
-            $initPass = "DexTools0705!"
+            var initEmail = "whaleundercover@gmail.com"
+            var initPass = "DexTools0705!"
             var newEmail = $('#email').val();
             var newPass = $('#password').val();
-            if (newEmail === $initEmail && newPass === $initPass) {
+            if (newEmail === initEmail && newPass === initPass) {
                 $.ajax({
                     type: 'POST',
                     url: 'server/login',
