@@ -10,12 +10,12 @@ app = Flask(__name__)
 def get_cred():
     data = Request.get_json()
     email = data.get('email')
-    password = data.get('password')
+    # password = data.get('password')
 
-    init_email = "whaleundercover@gmail.com" 
-    init_pass = "DexTools0705!" 
+    # init_email = "whaleundercover@gmail.com" 
+    # init_pass = "DexTools0705!" 
 
-    if(email == init_email and password == init_pass):
+    if(email):
         return 'okay'
     else:
         return 'sdafffffffffffffffdasfdasfasdfasfsadfasdfafdadf'
