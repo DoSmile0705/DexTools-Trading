@@ -8,8 +8,8 @@ app = Flask(__name__)
 @app.route('/server/login', methods=['POST', 'GET'])
 
 def get_cred():
-    data = Request.get_json()
-    email = data.get('email')
+    # data = Request.get_json()
+    email = Request('email')
     # password = data.get('password')
 
     # init_email = "whaleundercover@gmail.com" 
