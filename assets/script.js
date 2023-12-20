@@ -1,16 +1,16 @@
 $fleg = true
 
-$(document).ready(function () {
-    var token = localStorage.getItem('jwtToken'); // Retrieve the jwtToken from local storage
+// $(document).ready(function () {
+//     var token = localStorage.getItem('jwtToken'); // Retrieve the jwtToken from local storage
 
-    if (!token) {
+//     if (!token) {
 
-        window.location.replace("index.html");
-    } else {
-        window.location.replace("admin.html");
+//         window.location.replace("index.html");
+//     } else {
+//         window.location.replace("admin.html");
 
-    }
-});
+//     }
+// });
 
 
 $(function () {
